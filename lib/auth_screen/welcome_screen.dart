@@ -63,7 +63,7 @@ class WelcomeScreen extends StatelessWidget {
               padding: const EdgeInsets.all(38.0),
               child: GestureDetector(
                 onTap: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                         builder: (context) => const HomeScreen(),
