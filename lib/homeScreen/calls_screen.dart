@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/widgets/custom_appbar.dart';
 
 class CallsScreen extends StatefulWidget {
   const CallsScreen({super.key});
@@ -11,7 +12,10 @@ class _CallsScreenState extends State<CallsScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text("I am Call Screen"),
+      appBar: CustomAppBar(
+        appBarTitle: "Calls",
+        titleFontWeight: FontWeight.normal,
+      ),
     );
   }
 }
